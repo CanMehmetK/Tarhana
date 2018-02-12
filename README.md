@@ -1,6 +1,6 @@
 # Tarhana
 
-Asp.Net Core 2 + Angular + Angular Material
+Asp.Net Core 2 + Angular + Angular Material + Multi Tenant Architecture by Domain With Selectable Temaplate and Theme
 
 ASP.NET Core provides the following benefits:  ref: https://docs.microsoft.com/en-us/aspnet/core/
 - A unified story for building web UI and web APIs.
