@@ -1,7 +1,15 @@
 # Tarhana
 
-Asp.Net Core 2 + Angular + Angular Material + Multi Tenant Architecture by Domain With Selectable Temaplate and Theme
-Ionic 2 for Mobile.
+Asp.Net Core 2 
+
+     + Angular (Management and Dashboard )
+     + Angular Material (Management and Dashboard )
+     + Multi Tenant Architecture by Domain(Host) 
+       + Customized Identity Core for Query Optimization and Applying Multi Tenancy Options
+       + Tenants From Memory Cache from MongoDb or appsettings or someting else mixed
+       + Data Categories, Properties, Attributes management changed Multi Tenant ly
+     + Selectable Temaplate and Theme (via Folder and not Precompiled RAzor Views)
+     + Ionic 2 for Mobile.
 
 ASP.NET Core provides the following benefits:  ref: https://docs.microsoft.com/en-us/aspnet/core/
 - A unified story for building web UI and web APIs.
