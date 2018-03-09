@@ -9,7 +9,7 @@ Asp.Net Core 2
        + Tenants From Memory Cache from MongoDb or appsettings or someting else mixed
        + Data Categories, Properties, Attributes management changed Multi Tenant ly
      + Selectable Temaplate and Theme (via Folder and not Precompiled RAzor Views)
-     + Ionic 2 for Mobile.
+     + Ionic 3 + Angular 5 for Mobile.
 
 ASP.NET Core provides the following benefits:  ref: https://docs.microsoft.com/en-us/aspnet/core/
 - A unified story for building web UI and web APIs.
