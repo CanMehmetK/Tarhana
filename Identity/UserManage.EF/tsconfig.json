@@ -1,0 +1,23 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "types": [],
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "wwwroot/js/dist",
+    "sourceRoot": "App/Typings",
+    "watch": false,
+    "module": "commonjs"
+
+  },
+
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "obj",
+    "bin"
+  ]
+}

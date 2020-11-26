@@ -1,0 +1,32 @@
+﻿@using UserManage.EF.Extensions;
+@using Microsoft.AspNetCore.CustomIdentity;
+@{
+    Layout = "~/Areas/Management/Views/Shared/_LayoutAngular.cshtml";
+
+    ViewData["Title"] = "Index";
+
+ 
+
+}
+
+
+<div layout="row" ng-controller="UserAdminController as ctrl">
+    <div flex-gt-sm="100" flex="100">
+        <md-card>
+            <md-card-title style="padding:5px">
+                <md-card-title-text>Kullanıcılar</md-card-title-text>
+            </md-card-title>
+            <md-card-content style="padding:0 0 16px 16px">
+
+                
+
+                <div dx-data-grid="ctrl.userGridOptions" dx-item-alias="order"></div>
+                {{ctrl.selectedUser |json }}
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+
+
+
+

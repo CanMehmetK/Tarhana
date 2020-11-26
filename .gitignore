@@ -3,3 +3,26 @@
 ################################################################################
 
 /.vs/Ideative/config
+/.vs/Ideative/DesignTimeBuild
+/.vs/Ideative/v16
+/.vs/Tarhana/v16/.suo
+/.vs
+/Identity/Core/bin/Debug/netstandard2.0
+/Identity/Core/obj
+/Identity/EF/bin/Debug/netstandard2.0
+/Identity/EF/obj
+/Identity/EF/Microsoft.AspNetCore.CustomIdentity.EntityFrameworkCore.csproj.user
+/Identity/Identity/obj
+/Identity/Identity/bin/Debug/netstandard2.0
+/Identity/Microsoft.AspNetCore.CustomIdentity/obj
+/Identity/Microsoft.AspNetCore.CustomIdentity.MongoDB/obj
+/Identity/Microsoft.AspNetCore.CustomIdentity.Sample/obj
+/Identity/Multitenancy/obj
+/Identity/Stores/obj
+/Identity/UserManage.EF/obj
+/Identity/Microsoft.AspNetCore.CustomIdentity.MongoDB/bin/Debug
+/Identity/Multitenancy/bin/Debug/netstandard2.0
+/Identity/Stores/bin/Debug/netstandard2.0
+/Identity/UserManage.EF/bin/Debug/netcoreapp2.1
+/Identity/Microsoft.AspNetCore.CustomIdentity.Sample/bin/Debug/netcoreapp2.1
+/Identity/UserManage.EF/notes

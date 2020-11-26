@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-UserManage.EF-65BE069D-3133-40FF-AC83-6C19FBE360BF</UserSecretsId>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="App\%40types\**" />
+    <Compile Remove="App\Typings\%40types\**" />
+    <Content Remove="App\%40types\**" />
+    <Content Remove="App\Typings\%40types\**" />
+    <EmbeddedResource Remove="App\%40types\**" />
+    <EmbeddedResource Remove="App\Typings\%40types\**" />
+    <None Remove="App\%40types\**" />
+    <None Remove="App\Typings\%40types\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\dx\Lib\ts\dx.all.d.ts" />
+    <Content Remove="wwwroot\js\dx\Lib\ts\dx.all.legacy.d.ts" />
+    <Content Remove="wwwroot\js\dx\Lib\ts\jquery.d.ts" />
+    <Content Remove="wwwroot\js\dx\Lib\ts\knockout.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="App\Typings\all.d.ts" />
+    <None Remove="App\Typings\boot.ts" />
+    <None Remove="App\Typings\ts.d.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.1" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.8.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\themes\base\" />
+    <Folder Include="wwwroot\css\themes\default\" />
+    <Folder Include="wwwroot\css\themes\_bootstrap\" />
+    <Folder Include="wwwroot\js\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\themes\cerulean\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\cerulean\_variables.scss" />
+    <None Include="wwwroot\css\themes\cosmo\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\cosmo\_variables.scss" />
+    <None Include="wwwroot\css\themes\cyborg\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\cyborg\_variables.scss" />
+    <None Include="wwwroot\css\themes\darkly\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\darkly\_variables.scss" />
+    <None Include="wwwroot\css\themes\flatly\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\flatly\_variables.scss" />
+    <None Include="wwwroot\css\themes\journal\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\journal\_variables.scss" />
+    <None Include="wwwroot\css\themes\litera\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\litera\_variables.scss" />
+    <None Include="wwwroot\css\themes\lumen\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\lumen\_variables.scss" />
+    <None Include="wwwroot\css\themes\lux\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\lux\_variables.scss" />
+    <None Include="wwwroot\css\themes\materia\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\materia\_variables.scss" />
+    <None Include="wwwroot\css\themes\minty\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\minty\_variables.scss" />
+    <None Include="wwwroot\css\themes\pulse\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\pulse\_variables.scss" />
+    <None Include="wwwroot\css\themes\sandstone\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\sandstone\_variables.scss" />
+    <None Include="wwwroot\css\themes\simplex\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\simplex\_variables.scss" />
+    <None Include="wwwroot\css\themes\sketchy\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\sketchy\_variables.scss" />
+    <None Include="wwwroot\css\themes\slate\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\slate\_variables.scss" />
+    <None Include="wwwroot\css\themes\solar\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\solar\_variables.scss" />
+    <None Include="wwwroot\css\themes\spacelab\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\spacelab\_variables.scss" />
+    <None Include="wwwroot\css\themes\superhero\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\superhero\_variables.scss" />
+    <None Include="wwwroot\css\themes\united\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\united\_variables.scss" />
+    <None Include="wwwroot\css\themes\yeti\_bootswatch.scss" />
+    <None Include="wwwroot\css\themes\yeti\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="App\Typings\all.d.ts" />
+    <TypeScriptCompile Include="App\Typings\boot.ts" />
+    <TypeScriptCompile Include="App\Typings\ts.d.ts" />
+    <TypeScriptCompile Include="wwwroot\js\dx\Lib\ts\dx.all.d.ts" />
+    <TypeScriptCompile Include="wwwroot\js\dx\Lib\ts\dx.all.legacy.d.ts" />
+    <TypeScriptCompile Include="wwwroot\js\dx\Lib\ts\jquery.d.ts" />
+    <TypeScriptCompile Include="wwwroot\js\dx\Lib\ts\knockout.d.ts" />
+  </ItemGroup>
+
+</Project>

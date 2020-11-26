@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html ng-app="UserManageApp" ng-cloak>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @RenderSection("headers", required: false)
+    <style>
+        ul.jqtree-tree .jqtree-title {
+            font-size: 20px !important;
+        }
+    </style>
+
+    <environment names="Development">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="~/js/dx/Lib/css/dx.carmine.compact.css" rel="stylesheet" />
+        <link href="~/js/dx/Lib/css/dx.common.css" rel="stylesheet" />
+        <link href="~/lib/angular-material/angular-material.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/AngularJS-Toaster/toaster.css" rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="~/js/dx/Lib/css/dx.carmine.compact.css" rel="stylesheet" />
+        <link href="~/js/dx/Lib/css/dx.common.css" rel="stylesheet" />
+        <link href="~/lib/angular-material/angular-material.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/AngularJS-Toaster/toaster.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <div layout="column" ng-cloak style="height:100vh">
+        <section layout="row" flex>
+            <md-sidenav md-component-id='mainleft'
+                        class='fixed-nav md-sidenav-left md-whiteframe-z2'
+                        md-is-locked-open='mainleftopen'
+                        md-disable-backdrop>
+                <md-toolbar>
+                    <h3 class='md-toolbar-tools'>Apartmen Main</h3>
+                </md-toolbar>
+                <md-content flex>
+                    <md-content>
+            </md-sidenav>
+            <section flex layout='column'>
+                <md-toolbar layout='row'>
+                    <div class="md-toolbar-tools">
+                        <md-button ng-click="toggleLeft()" class=" md-icon-button"><i class="material-icons">menu</i></md-button>
+                        <h2 md-truncate>Apartment</h2>
+                        <a class="md-button md-raised" href="/">Home</a>
+                        <a class="md-button md-raised" href="/Management">Management</a>
+                        <a class="md-button md-raised" href="/Management/Tenant">Tenant Management</a>
+                        <a class="md-button md-raised" href="/Management/User">User Management</a>
+                        <span flex></span>
+                    </div>
+                </md-toolbar>
+                @RenderBody()
+            </section>
+        </section>
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/angular/angular.min.js"></script>
+        <script src="~/lib/angular-animate/angular-animate.js"></script>
+        <script src="~/lib/angular-aria/angular-aria.js"></script>
+        <script src="~/lib/angular-material/angular-material.js"></script>
+        <script src="~/lib/AngularJS-Toaster/toaster.js"></script>
+        <script src="~/js/dx/Lib/js/dx.all.js"></script>
+        <script src="~/js/dist/boot.js" asp-append-version="true"></script>
+        <script src="~/js/dist/admincontrollers.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"></script>
+        <script src="~/lib/angular/angular.min.js"></script>
+        <script src="~/lib/angular-animate/angular-animate.js"></script>
+        <script src="~/lib/angular-aria/angular-aria.js"></script>
+        <script src="~/lib/angular-material/angular-material.js"></script>
+        <script src="~/lib/AngularJS-Toaster/toaster.js"></script>
+        <script src="~/js/dx/Lib/js/dx.all.js"></script>
+        <script src="~/js/dist/boot.js"></script>
+        <script src="~/js/dist/admincontrollers.js" asp-append-version="true"></script>
+    </environment>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109257222-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109257222-1');
+        angular.module('UserManageApp').run(function ($http) {
+
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+    <toaster-container toaster-options="{'close-button':true,'limit':3, 'time-out':{ 'toast-success': 3000, 'toast-warning': 3000, 'toast-error': 3000 } }"></toaster-container>
+</body>
+</html>

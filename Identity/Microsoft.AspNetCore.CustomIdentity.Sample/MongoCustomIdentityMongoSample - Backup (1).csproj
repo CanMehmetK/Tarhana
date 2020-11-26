@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.1</TargetFramework>
+		<UserSecretsId>aspnet-MongoCustomIdentity-36E26AB0-F2BF-4B87-80EF-320EA6BC48DA</UserSecretsId>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="2.1.1" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="2.1.1" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink.Loader" Version="14.1.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+		<PackageReference Include="MongoDB.Driver" Version="2.11.1" />
+		<PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0004" />
+		<PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0004" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.8.13" />
+	</ItemGroup>
+	<ItemGroup>
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+		<DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Domain\Ideative.Domain\Ideative.Domain.csproj" />
+	  <ProjectReference Include="..\Identity\Microsoft.AspNetCore.CustomIdentity.csproj" />
+	</ItemGroup>
+</Project>
